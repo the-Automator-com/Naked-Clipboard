@@ -1,6 +1,6 @@
 Menu, Tray, Click, 1
 Menu, Tray, NoStandard
-Menu, Tray, Icon, % script.iconfile
+Menu, Tray, Icon, % script.iconfile, % script.iconnumber
 Menu, Tray, Add, % "Preferences"
 Menu, Tray, Default, % "Preferences"
 Menu, Tray, Add

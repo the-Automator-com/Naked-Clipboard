@@ -4,7 +4,7 @@ Menu, Tray, Icon, % script.iconfile, % script.iconnumber
 Menu, Tray, Add, % "Preferences"
 Menu, Tray, Default, % "Preferences"
 Menu, Tray, Add
-; Menu, Tray, Add, % "Check for Updates", % "Update"
+Menu, Tray, Add, % "Check for Updates", % "Update"
 Menu, Tray, Add, % "About"
 Menu, Tray, Add
 Menu, Tray, Add, % "Reload"
@@ -58,7 +58,8 @@ About()
 update()
 {
 	try
-		script.update(false, false)
+		script.update("https://raw.githubusercontent.com/RaptorX/Naked-Clipboard/latest/ver"
+		             ,"https://github.com/RaptorX/Naked-Clipboard/releases/download/latest/NakedClipboard.zip")
 	catch err
 		msgbox % err.code ": " err.msg
 

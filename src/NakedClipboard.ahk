@@ -13,6 +13,7 @@
 
 global script := {base         : script
                  ,name         : regexreplace(A_ScriptName, "\.\w+")
+                 ,eddID        : 25921
                  ,version      : "0.2.0"
                  ,author       : "Joe Glines"
                  ,email        : "joe.glines@the-automator.com"
@@ -24,6 +25,8 @@ global script := {base         : script
                  ,iconNumber   : 242
                  ,configfile   : A_ScriptDir "\settings.ini"
                  ,configfolder : ""}
+
+script.GetLicense()
 
 ; gui components
 #Include <gui\menu>

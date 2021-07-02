@@ -5,6 +5,7 @@
 ; Right now you can  get a coupon code here: https://the-Automator.com/Learn  *
 ;******************************************************************************
 #SingleInstance, force
+#Include %A_ScriptDir%
 
 ; libraries
 #Include <pasteNaked>
@@ -25,8 +26,8 @@ global script := {base         : script
                  ,configfolder : ""}
 
 ; gui components
-#Include gui\menu.ahk
+#Include <gui\menu>
 
-IniRead, currentHotkey, % script.configfile, Hotkeys, main, ^g
+IniRead, currentHotkey, % script.configfile, % "Hotkeys", % "main", % "^g"
 Hotkey, % currentHotkey, % "PasteNaked"
 return

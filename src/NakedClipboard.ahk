@@ -18,7 +18,7 @@
 global script := {base         : script
                  ,name         : regexreplace(A_ScriptName, "\.\w+")
                  ,eddID        : 25921
-                 ,version      : "0.3.1"
+                 ,version      : "0.3.3"
                  ,author       : "Joe Glines"
                  ,email        : "joe.glines@the-automator.com"
                  ,homepagetext : "https://the-Automator.com/NakedClip"

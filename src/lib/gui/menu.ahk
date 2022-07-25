@@ -1,6 +1,8 @@
 Menu, Tray, Click, 1
 Menu, Tray, NoStandard
-Menu, Tray, Icon, % script.iconfile, % script.iconnumber
+
+if !A_IsCompiled
+	Menu, Tray, Icon, % A_WinDir "\system32\imageres.dll", 242
 
 Menu, Tray, Add, % "Preferences"
 Menu, Tray, Default, % "Preferences"

@@ -6,10 +6,14 @@
 ;******************************************************************************
 #SingleInstance, force
 #Include %A_ScriptDir%
+;@Ahk2Exe-SetMainIcon  res\241.ico
 
 ; libraries
 #Include <pasteNaked>
 #Include <ScriptObj\ScriptObj>
+
+; gui components
+#Include <gui\menu>
 
 global script := {base         : script
                  ,name         : regexreplace(A_ScriptName, "\.\w+")
@@ -21,15 +25,11 @@ global script := {base         : script
                  ,homepagelink : "https://www.the-automator.com/NakedClip"
                  ,donateLink   : "https://www.paypal.com/donate?hosted_button_id=MBT5HSD9G94N6"
                  ,resfolder    : A_ScriptDir "\res"
-                 ,iconfile     : A_WinDir "\system32\imageres.dll"
-                 ,iconNumber   : 242
                  ,configfile   : A_ScriptDir "\settings.ini"
                  ,configfolder : ""}
 
 script.GetLicense()
 
-; gui components
-#Include <gui\menu>
 
 IniRead, currentHotkey, % script.configfile, % "Hotkeys", % "main", % "^g"
 Hotkey, % currentHotkey, % "PasteNaked"

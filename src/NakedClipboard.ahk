@@ -1,3 +1,4 @@
+#Requires Autohotkey v1.1.33+
 ;******************************************************************************
 ; Want a clear path for learning AutoHotkey?                                  *
 ; Take a look at our AutoHotkey Udemy courses.                                *

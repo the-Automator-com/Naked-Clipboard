@@ -1,3 +1,4 @@
+#Requires Autohotkey v1.1.33+
 Menu, Tray, Click, 1
 Menu, Tray, NoStandard
 

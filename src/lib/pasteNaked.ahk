@@ -1,3 +1,4 @@
+#Requires Autohotkey v1.1.33+
 ;paste plain text from ClipBoard
 PasteNaked()                                                                    ; Control G =Paste Text version of Clipboard
 {

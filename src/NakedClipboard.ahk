@@ -1,4 +1,8 @@
 #Requires Autohotkey v1.1.33+
+;--
+;@Ahk2Exe-SetVersion 0.3.3
+;@Ahk2Exe-SetProductName Naked Clipboard
+;@Ahk2Exe-SetDescription Paste the clipboard as plain text
 ;******************************************************************************
 ; Want a clear path for learning AutoHotkey?                                  *
 ; Take a look at our AutoHotkey Udemy courses.                                *

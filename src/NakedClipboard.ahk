@@ -1,6 +1,7 @@
 #Requires Autohotkey v1.1.33+
 ;--
 ;@Ahk2Exe-SetVersion 0.3.3
+;@Ahk2Exe-SetMainIcon  res\241.ico
 ;@Ahk2Exe-SetProductName Naked Clipboard
 ;@Ahk2Exe-SetDescription Paste the clipboard as plain text
 ;******************************************************************************
@@ -10,8 +11,6 @@
 ; Right now you can  get a coupon code here: https://the-Automator.com/Learn  *
 ;******************************************************************************
 #SingleInstance, force
-#Include %A_ScriptDir%
-;@Ahk2Exe-SetMainIcon  res\241.ico
 
 ; libraries
 #Include <pasteNaked>

@@ -34,6 +34,12 @@ global script := {base         : script
 
 script.GetLicense()
 
+try script.Update("https://raw.githubusercontent.com/RaptorX/Naked-Clipboard/master/ver"
+                 ,"https://github.com/RaptorX/Naked-Clipboard/releases/download/latest/NakedClipboard.zip")
+Catch err
+	if err.code != 6
+		MsgBox % err.msg
+
 IniRead, currentHotkey, % script.configfile, % "Hotkeys", % "main", % "^g"
 Hotkey, % currentHotkey, % "PasteNaked"
 return

@@ -35,7 +35,6 @@ global script := {base         : script
 
 script.GetLicense()
 
-
 IniRead, currentHotkey, % script.configfile, % "Hotkeys", % "main", % "^g"
 Hotkey, % currentHotkey, % "PasteNaked"
 return

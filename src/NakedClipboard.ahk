@@ -14,7 +14,7 @@
 
 ; libraries
 #Include <pasteNaked>
-#Include <ScriptObj\ScriptObj>
+#Include <ScriptObject\ScriptObject>
 
 ; gui components
 #Include <gui\menu>

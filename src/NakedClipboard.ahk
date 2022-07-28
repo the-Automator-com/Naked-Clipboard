@@ -1,6 +1,6 @@
 #Requires Autohotkey v1.1.33+
 ;--
-;@Ahk2Exe-SetVersion     0.5.0
+;@Ahk2Exe-SetVersion     0.6.0
 ;@Ahk2Exe-SetMainIcon    res\241.ico
 ;@Ahk2Exe-SetProductName Naked Clipboard
 ;@Ahk2Exe-SetDescription Paste the clipboard as plain text
@@ -22,7 +22,7 @@
 global script := {base         : script
                  ,name         : regexreplace(A_ScriptName, "\.\w+")
                  ,eddID        : 25921
-                 ,version      : "0.5.0"
+                 ,version      : "0.6.0"
                  ,author       : "Joe Glines"
                  ,email        : "joe.glines@the-automator.com"
                  ,homepagetext : "https://the-Automator.com/NakedClip"
